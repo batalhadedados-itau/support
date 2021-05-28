@@ -32,4 +32,4 @@ Os recursos são disponiveis para provisionamento utilizando Cloud Formation, es
 
 Nesta sessão você encontrara vídeos para te auxiliar na construção do seu projeto no Hackathon.
 
-[Videos](videos/)
+[Videos](AWS%20-%20Support/videos)
