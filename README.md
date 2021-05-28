@@ -26,7 +26,7 @@ O AWS CloudFormation é um serviço que ajuda você a modelar e configurar seus 
 
 Os recursos são disponiveis para provisionamento utilizando Cloud Formation, esses templates são previamente configurados para provisionar os recursos em sua conta AWS de forma mais simples e pronta para utilização no Hackathon.
 
-[CloudFormation Templates](cloudformation/)
+[CloudFormation Templates](AWS%20-%20Support/cloudformation)
 
 # Vídeos de apoio
 
