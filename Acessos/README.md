@@ -14,6 +14,7 @@ Cada hacka recebeu um arquivo `batalha_de_dados_X_hacka_Y.zip` (X é um número 
 
 ![01](images/acessos-01.png)
 
+
 ## Acesso ao R-Studio
 
 O acesso a ferramenta `R-Studio` pode ser feito a partir de um navegador, a partir da sua estação de trabalho pessoal ou da VM Windows, a partir do endereço público da máquina Thanos da sua equipe.
@@ -27,9 +28,17 @@ O acesso a ferramenta `R-Studio` pode ser feito a partir de um navegador, a part
 ![01](images/acessos-03.png)
 
 
-- Selecione a máquina Thanos do seu Hacka (A ou B) e copie o endereço descrito em DNS "IPv4 Público" no menu inferior e então acrescente `:` seguido da porta `8787`. Utilize o endereço formado no navegador. Ele deve ficar semelhante a: `http://ec2-1-23-456-78.compute-1.amazonaws.com:8787/`
+- Selecione a máquina Thanos do seu Hacka (A ou B) e copie o endereço descrito em "DNS IPv4 Público" no menu inferior e então acrescente `:` seguido da porta `8787`. Utilize o endereço formado no navegador. Ele deve ficar semelhante a: 
+
+`http://ec2-1-23-456-78.compute-1.amazonaws.com:8787/`
 
 
 - Você deve visualizar a tela abaixo. Utilize uma das credenciais do arquivo **UsuariosLocaisVMs.xlsx** e pronto :D 
 ![01](images/acessos-04.png)
 
+
+## Acesso ssh à máquina Thanos (Unix) com privilégio root
+
+Para acessar a remotamente a máquina Thanos do seu Hacka, utilize a chave do arquivo `batalha_de_dados_X_hacka_Y.pem` do seu kit de acesso e o endereço de "DNS IPv4 Público" ou "Endereço IPv4 Público" no comando abaixo em um terminal/shell:
+
+`ssh -i batalha_de_dados_X_hacka_Y.pem ec2-user@<endereco_ip_ou_dns>`
