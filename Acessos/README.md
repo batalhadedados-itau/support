@@ -2,7 +2,7 @@
 
 Cada hacka recebeu um arquivo `batalha_de_dados_X_hacka_Y.zip` (X é um número de 1 a 9, indicando o número da conta e Y representa a equipe com letra 'A' ou 'B' para a equipe). Esse arquivo compactado contém 5 arquivos:
 
-- **AcessosConsole.csv:** Um arquivo em formato `csv`, delimitado por vírgulas, com informações relacionadas aos usuários IAM para acesso ao console AWS, juntamento com as credenciais de `accessKey` e `secretKey`;
+- **AcessosConsole.csv:** Um arquivo em formato `csv`, delimitado por vírgulas, com informações relacionadas aos usuários IAM para acesso ao console AWS, juntamente com as credenciais de `accessKey` e `secretKey`;
 
 - **batalha_de_dados_X_hacka_Y.pem:** *Key pair* para acesso ssh à instância *Thanos* (Unix) com privilégios de `admin/root`
 
@@ -39,6 +39,21 @@ O acesso a ferramenta `R-Studio` pode ser feito a partir de um navegador, a part
 
 ## Acesso ssh à máquina Thanos (Unix) com privilégio root
 
-Para acessar a remotamente a máquina Thanos do seu Hacka, utilize a chave do arquivo `batalha_de_dados_X_hacka_Y.pem` do seu kit de acesso e o endereço de "DNS IPv4 Público" ou "Endereço IPv4 Público" no comando abaixo em um terminal/shell:
+- Para acessar a remotamente a máquina Thanos do seu Hacka, utilize a chave do arquivo `batalha_de_dados_X_hacka_Y.pem` do seu kit de acesso e o endereço de "DNS IPv4 Público" ou "Endereço IPv4 Público" no comando abaixo em um terminal/shell:
 
 `ssh -i batalha_de_dados_X_hacka_Y.pem ec2-user@<endereco_ip_ou_dns>`
+
+
+## Usuários Joker com licenças das ferramentas Alteryx Designer e Tableau Desktop
+
+- Os usuários com licença *Alteryx Designer* ativada e disponível para uso na estação Joker (VM Windows) de cada Hacka são: 
+	- pnegra
+	- cmarvel
+	- hferro
+	- vnegra
+	- haranha
+
+![01](images/acessos-05.png)	
+
+
+- O *Tableau Desktop* está disponível em todos os usuários, exceto a `fescarlate`.
