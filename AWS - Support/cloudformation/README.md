@@ -6,16 +6,22 @@
 
 ## Passo a passo para utilizar o CloudFormation
 
+- Pre-req: Façam upload do template de Cloudformation no bucket S3 que foi disponibilizado para o seu time.
+[Como fazer upload no S3?](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/upload-objects.html)
+
+Com o template no bucket, sigam: 
+
+
 - Ao logar no console da AWS, procure pelo serviço Cloud Formation: 
 ![01](images/cf-01.png)
 
 - Clique em Stack Options e selecione a opção `with new resources`
 ![01](images/cf-02.png)
 
-- Na opção de `Create Stack`, selecione a opção `upload template file` e `Choose file` , encontre o arquivo na sua máquina (após baixar aqui do Github :p ) 
+- Na opção de `Create Stack`, selecione a opção `Amazon S3 URL` e descreva o nome do seu bucket/arquivo no seguinte formato `s3://seubucket/06-sagemaker-notebook.yaml`  e clique em NEXT.
 ![01](images/cf-03.png)
 
-- Na Stack Name, pode escolher o nome da sua Stack, por exemplo `sagemaker-notebook-avangers`
+- Na Stack Name, pode escolher o nome da sua Stack, por exemplo `sagemaker-notebook-avangers` e o environment que você está utilizando, HackaA ou HackaB.
 ![01](images/cf-04.png)
 
 - Preencha os campos com as variaveis necessárias, e clique em `Create Stack`
