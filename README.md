@@ -20,6 +20,17 @@ Utilizaremos o AWS cli para configurar os templates das nossas stacks.
 
 [Como configurar o aws-cli](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-welcome.html)
 
+# Como Baixar os dados ?
+
+- Configure AWS Cli conforme o item anterior com a access key e secret key que voce recebeu do time organizador.
+
+- Rode o seguinte comando: `aws s3 cp s3://batalhasocial-iu . --recursive`
+
+Voce pode também utilizar alguma SDK de sua preferencia pra fazer a utilização dos dados.
+
+[Boto3 para Python](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-example-download-file.html)
+
+[Como configurar o Boto?](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration)
 # CloudFormation Templates
 
 O AWS CloudFormation é um serviço que ajuda você a modelar e configurar seus recursos da Amazon Web Services para despender menos tempo gerenciando esses recursos e mais tempo se concentrando em seus aplicativos executados AWS.
