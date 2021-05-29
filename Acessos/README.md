@@ -13,3 +13,23 @@ Cada hacka recebeu um arquivo `batalha_de_dados_X_hacka_Y.zip` (X é um número 
 - **UsuariosLocaisVMs.xlsx:** Arquivo em formato xlsx com as credenciais de usuário e senha para acesso à instância *Joker* (Windows) e ao R-Studio.
 
 ![01](images/acessos-01.png)
+
+## Acesso ao R-Studio
+
+O acesso a ferramenta `R-Studio` pode ser feito a partir de um navegador, a partir da sua estação de trabalho pessoal ou da VM Windows, a partir do endereço público da máquina Thanos da sua equipe.
+
+
+- Ao logar no console da AWS, procure pelo serviço EC2: 
+![01](images/acessos-02.png)
+
+
+- Procure pelo recurso "Instâncias (em execução)": 
+![01](images/acessos-03.png)
+
+
+- Selecione a máquina Thanos do seu Hacka (A ou B) e copie o endereço descrito em DNS "IPv4 Público" no menu inferior e então acrescente `:` seguido da porta `8787`. Utilize o endereço formado no navegador. Ele deve ficar semelhante a: `http://ec2-1-23-456-78.compute-1.amazonaws.com:8787/`
+
+
+- Você deve visualizar a tela abaixo. Utilize uma das credenciais do arquivo **UsuariosLocaisVMs.xlsx** e pronto :D 
+![01](images/acessos-04.png)
+
